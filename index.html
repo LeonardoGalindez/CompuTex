@@ -17,183 +17,196 @@
 </head>
 
 <body>
-    <!--Navegation-->
-    <nav class="nav">
-        <div class="nav__center container">
-            <div class="nav__logo">
+    <header class="header">
+        <div class="header__center container">
+            <div class="header__logo">
                 <h1>CompuTex <span>PC</span></h1>
             </div>
-            <ul class="nav__list">
-
+            <ul class="header__list">
                 <div class="carrito__icon">
                     <i class="bx bx-cart"></i>
                     <span class="item__total">0</span>
                 </div>
             </ul>
         </div>
-    </nav>
+        <!--Navegation-->
+        <div class="nav__container">
+            <input type="checkbox" id="menu" />
+            <label for="menu"><i class='bx bx-menu'></i></label>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Categorias</a></li>
+                    <li><a href="#">AcercaDe</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
     <!--Filter-->
-    <section class="filter">
-        <div class="grid">
-            <div class="div">
-                <label for="buscar"><span><i class="bx bx-search"></i></span></label>
-                <input type="text" id="buscar" placeholder="Buscar componente...">
+    <main class="main">
+        <section class="filter">
+            <div class="grid">
+                <div class="div">
+                    <label for="buscar"><span><i class="bx bx-search"></i></span></label>
+                    <input type="text" id="buscar" placeholder="Buscar componente...">
+                </div>
+                <div class="category">
+                    <select id="category" onclick="categoryValue()">
+                        <option value="">Categorias</option>
+                        <option value="rolex">Microprocesadores</option>
+                        <option value="omega">Memorias Ram</option>
+                        <option value="audemars">Placas Madres</option>
+                        <option value="rolexDay">Discos</option>
+                        <option value="hublot">Fuentes</option>
+                        <option value="tag">Gabinetes</option>
+                    </select>
+                </div>
             </div>
-            <div class="category">
-                <select id="category" onclick="categoryValue()">
-                    <option value="">Categorias</option>
-                    <option value="rolex">Microprocesadores</option>
-                    <option value="omega">Memorias Ram</option>
-                    <option value="audemars">Placas Madres</option>
-                    <option value="rolexDay">Discos</option>
-                    <option value="hublot">Fuentes</option>
-                    <option value="tag">Gabinetes</option>
-                </select>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!--Productos-->
-    <section class="productos">
-        <div class="productos__center">
-            <div class="producto">
-                <div class="image__container">
-                    <img src="https://http2.mlstatic.com/D_NQ_NP_678838-MLA48832646699_012022-O.webp" alt="">
+        <!--Productos-->
+        <section class="productos">
+            <div class="productos__center">
+                <div class="producto">
+                    <div class="image__container">
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_678838-MLA48832646699_012022-O.webp" alt="">
+                    </div>
+                    <div class="producto__footer">
+                        <h3>Memoria Ram HyperX 8gb 3200mhz</h3>
+                        <div class="price">$18.900.00</div>
+                    </div>
+                    <div class="bottom">
+                        <div class="btn__group">
+                            <a href="#" class="btn addToCart">Añadir carrito</a>
+                            <a href="producto-detalle.html" class="btn view">Ver</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="producto__footer">
-                    <h3>Memoria Ram HyperX 8gb 3200mhz</h3>
-                    <div class="price">$18.900.00</div>
+                <div class="producto">
+                    <div class="image__container">
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_678838-MLA48832646699_012022-O.webp" alt="">
+                    </div>
+                    <div class="producto__footer">
+                        <h3>Memoria Ram HyperX 8gb 3200mhz</h3>
+                        <div class="price">$18.900.00</div>
+                    </div>
+                    <div class="bottom">
+                        <div class="btn__group">
+                            <a href="#" class="btn addToCart">Añadir carrito</a>
+                            <a href="producto-detalle.html" class="btn view">Ver</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="bottom">
-                    <div class="btn__group">
-                        <a href="#" class="btn addToCart">Añadir carrito</a>
-                        <a href="producto-detalle.html" class="btn view">Ver</a>
+                <div class="producto">
+                    <div class="image__container">
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_678838-MLA48832646699_012022-O.webp" alt="">
+                    </div>
+                    <div class="producto__footer">
+                        <h3>Memoria Ram HyperX 8gb 3200mhz</h3>
+                        <div class="price">$18.900.00</div>
+                    </div>
+                    <div class="bottom">
+                        <div class="btn__group">
+                            <a href="#" class="btn addToCart">Añadir carrito</a>
+                            <a href="producto-detalle.html" class="btn view">Ver</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="producto">
+                    <div class="image__container">
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_678838-MLA48832646699_012022-O.webp" alt="">
+                    </div>
+                    <div class="producto__footer">
+                        <h3>Memoria Ram HyperX 8gb 3200mhz</h3>
+                        <div class="price">$18.900.00</div>
+                    </div>
+                    <div class="bottom">
+                        <div class="btn__group">
+                            <a href="#" class="btn addToCart">Añadir carrito</a>
+                            <a href="producto-detalle.html" class="btn view">Ver</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="producto">
+                    <div class="image__container">
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_678838-MLA48832646699_012022-O.webp" alt="">
+                    </div>
+                    <div class="producto__footer">
+                        <h3>Memoria Ram HyperX 8gb 3200mhz</h3>
+                        <div class="price">$18.900.00</div>
+                    </div>
+                    <div class="bottom">
+                        <div class="btn__group">
+                            <a href="#" class="btn addToCart">Añadir carrito</a>
+                            <a href="producto-detalle.html" class="btn view">Ver</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="producto">
+                    <div class="image__container">
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_678838-MLA48832646699_012022-O.webp" alt="">
+                    </div>
+                    <div class="producto__footer">
+                        <h3>Memoria Ram HyperX 8gb 3200mhz</h3>
+                        <div class="price">$18.900.00</div>
+                    </div>
+                    <div class="bottom">
+                        <div class="btn__group">
+                            <a href="#" class="btn addToCart">Añadir carrito</a>
+                            <a href="producto-detalle.html" class="btn view">Ver</a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="producto">
-                <div class="image__container">
-                    <img src="https://http2.mlstatic.com/D_NQ_NP_678838-MLA48832646699_012022-O.webp" alt="">
-                </div>
-                <div class="producto__footer">
-                    <h3>Memoria Ram HyperX 8gb 3200mhz</h3>
-                    <div class="price">$18.900.00</div>
-                </div>
-                <div class="bottom">
-                    <div class="btn__group">
-                        <a href="#" class="btn addToCart">Añadir carrito</a>
-                        <a href="producto-detalle.html" class="btn view">Ver</a>
+
+
+        </section>
+
+        <!--Carrito-->
+
+        <section class="carrito__overlay">
+            <div class="carrito">
+                <span class="close__carrito">
+                    <i class="bx bx-x"></i>
+                </span>
+                <h1>Su Carrito</h1>
+                <div class="carrito__center">
+
+                    <div class="carrito__item">
+
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_678838-MLA48832646699_012022-O.webp" alt="memoria">
+                        <div>
+                            <h3>Relojes Originales </h3>
+                            <p class="price">$122</p>
+                        </div>
+                        <div>
+                            <span>
+                                <i class="bx bxs-up-arrow"></i>
+                            </span>
+                            <p>1</p>
+                            <span>
+                                <i class="bx bxs-down-arrow"></i>
+                            </span>
+                        </div>
+                        <div>
+                            <span class="remove__item">
+                                <i class="bx bx-trash"></i>
+                            </span>
+                        </div>
+
+
                     </div>
+                </div>
+
+                <div class="carrito__footer">
+                    <h3>Total: $ <span class="carrito__total">0</span></h3>
+                    <button class="clear__carrito btn">Limpiar Carrito</button>
                 </div>
             </div>
-            <div class="producto">
-                <div class="image__container">
-                    <img src="https://http2.mlstatic.com/D_NQ_NP_678838-MLA48832646699_012022-O.webp" alt="">
-                </div>
-                <div class="producto__footer">
-                    <h3>Memoria Ram HyperX 8gb 3200mhz</h3>
-                    <div class="price">$18.900.00</div>
-                </div>
-                <div class="bottom">
-                    <div class="btn__group">
-                        <a href="#" class="btn addToCart">Añadir carrito</a>
-                        <a href="producto-detalle.html" class="btn view">Ver</a>
-                    </div>
-                </div>
-            </div>
-            <div class="producto">
-                <div class="image__container">
-                    <img src="https://http2.mlstatic.com/D_NQ_NP_678838-MLA48832646699_012022-O.webp" alt="">
-                </div>
-                <div class="producto__footer">
-                    <h3>Memoria Ram HyperX 8gb 3200mhz</h3>
-                    <div class="price">$18.900.00</div>
-                </div>
-                <div class="bottom">
-                    <div class="btn__group">
-                        <a href="#" class="btn addToCart">Añadir carrito</a>
-                        <a href="producto-detalle.html" class="btn view">Ver</a>
-                    </div>
-                </div>
-            </div>
-            <div class="producto">
-                <div class="image__container">
-                    <img src="https://http2.mlstatic.com/D_NQ_NP_678838-MLA48832646699_012022-O.webp" alt="">
-                </div>
-                <div class="producto__footer">
-                    <h3>Memoria Ram HyperX 8gb 3200mhz</h3>
-                    <div class="price">$18.900.00</div>
-                </div>
-                <div class="bottom">
-                    <div class="btn__group">
-                        <a href="#" class="btn addToCart">Añadir carrito</a>
-                        <a href="producto-detalle.html" class="btn view">Ver</a>
-                    </div>
-                </div>
-            </div>
-            <div class="producto">
-                <div class="image__container">
-                    <img src="https://http2.mlstatic.com/D_NQ_NP_678838-MLA48832646699_012022-O.webp" alt="">
-                </div>
-                <div class="producto__footer">
-                    <h3>Memoria Ram HyperX 8gb 3200mhz</h3>
-                    <div class="price">$18.900.00</div>
-                </div>
-                <div class="bottom">
-                    <div class="btn__group">
-                        <a href="#" class="btn addToCart">Añadir carrito</a>
-                        <a href="producto-detalle.html" class="btn view">Ver</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+        </section>
+    </main>
 
-      
-    </section>
-
-    <!--Carrito-->
-
-    <section class="carrito__overlay">
-        <div class="carrito">
-            <span class="close__carrito">
-                <i class="bx bx-x"></i>
-            </span>
-            <h1>Su Carrito</h1>
-            <div class="carrito__center">
-
-                <div class="carrito__item">
-
-                    <img src="https://http2.mlstatic.com/D_NQ_NP_678838-MLA48832646699_012022-O.webp" alt="memoria">
-                    <div>
-                        <h3>Relojes Originales </h3>
-                        <p class="price">$122</p>
-                    </div>
-                    <div>
-                        <span>
-                            <i class="bx bxs-up-arrow"></i>
-                        </span>
-                        <p>1</p>
-                        <span>
-                            <i class="bx bxs-down-arrow"></i>
-                        </span>
-                    </div>
-                    <div>
-                        <span class="remove__item">
-                            <i class="bx bx-trash"></i>
-                        </span>
-                    </div>
-
-
-                </div>
-            </div>
-
-            <div class="carrito__footer">
-                <h3>Total: $ <span class="carrito__total">0</span></h3>
-                <button class="clear__carrito btn">Limpiar Carrito</button>
-            </div>
-        </div>
-    </section>
 
     <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
     <script src="js/scripts.js"></script>

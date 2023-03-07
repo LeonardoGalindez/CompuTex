@@ -59,8 +59,8 @@ li{
     }
 }
 
-/* NAVIGATION */
-.nav{
+/* Encabezado */
+.header{
     position: fixed;
     top: 0;
     left: 0;
@@ -69,30 +69,32 @@ li{
     line-height: 1rem;
     background-color: var(--black);
 }
-.nav__center{
+.header__center{
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 100%;
 }
-.nav__logo{
+.header__logo{
     font-size: 2rem;
     color: var(--white);
 }
-.nav__logo span{
+.header__logo span{
     color: var(--rojo);
 }
-.nav__list{
+.header__list{
     display: flex;
     align-items: center;
 }
-.nav__list span{
+.header__list span{
     display: inline-block;
     font-size: 3.5rem;
     margin-top: .2rem;
     margin-right: 2rem;
     color: rgb(255, 255, 255);
 }
+
+
 .carrito__icon{
     position: relative;
     cursor: pointer;
@@ -115,6 +117,56 @@ li{
     font-size: 1.5rem;
     font-weight: 700;
     border-radius: 50%;
+}
+/* Navegacion */
+.nav__container .nav ul li{
+    position: relative;
+    float: right;
+}
+.nav__container .nav ul li a{
+    font-size: 16px;
+    padding: 20px;
+    color: #ffffff;
+    display: block;
+    font-weight: 600;
+}
+.nav__container .nav ul li a:hover{
+   color: #949494;
+}
+#menu{
+    display:none;
+}
+.nav__container label{
+    cursor: pointer;
+    display: none;
+}
+.menu-icono{
+    width:25px;
+}
+@media(max-width: 800px){
+    .nav__container{
+        padding: 10px;
+    }
+    .nav__container label{
+        display: initial;
+    }
+    .nav__container .nav{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #303030;
+        display: none;
+    }
+    .nav__container .nav ul li a {
+        color: #000000;
+    }
+    .nav__container .nav ul li a:hover {
+        color: #525252;
+    }
+    #menu:checked ~ .nav {
+        display: initial;
+    }
 }
 
 /* PRODUCTOS */
