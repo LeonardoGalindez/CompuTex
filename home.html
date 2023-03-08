@@ -18,42 +18,19 @@
 </head>
 
 <body>
-    <!--Navegation-->
-    <nav class="nav">
-        <div class="nav__center container">
-            <div class="nav__logo">
-                <h1>CompuTex <span>PC</span></h1>
-            </div>
-            <ul class="nav__list">
-
-                <div class="carrito__icon">
-                    <i class="bx bx-cart"></i>
-                    <span class="item__total">0</span>
-                </div>
+    <header class="header">
+        
+        <a href="#" class="logo">Compu<span>Tex</span></a>
+        <input type="checkbox" id="side-menu" class="side-menu">
+        <label for="side-menu" class="hamb"><span class="hamb-line"></span></label>
+        <nav class="nav">
+            <ul class="menu">
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Carrito</a></li>
+                <li><a href="#">AcercaDe</a></li>
             </ul>
-        </div>
-    </nav>
-
-    <!--Filter-->
-    <section class="filter">
-        <div class="grid">
-            <div class="div">
-                <label for="buscar"><span><i class="bx bx-search"></i></span></label>
-                <input type="text" id="buscar" placeholder="Buscar componente...">
-            </div>
-            <div class="category">
-                <select id="category" onclick="categoryValue()">
-                    <option value="">Categorias</option>
-                    <option value="rolex">Microprocesadores</option>
-                    <option value="omega">Memorias Ram</option>
-                    <option value="audemars">Placas Madres</option>
-                    <option value="rolexDay">Discos</option>
-                    <option value="hublot">Fuentes</option>
-                    <option value="tag">Gabinetes</option>
-                </select>
-            </div>
-        </div>
-    </section>
+        </nav>
+    </header>
 </body>
 
 </html>
